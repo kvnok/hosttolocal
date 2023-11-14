@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<h1>on localhost!</h1>
+	</head>
+	<body>
+		<p>testing text</p>
+		<p>yep</p>
+		<h1>h1</h1>
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<h4>h4</h4>
+		<h5>h5</h5>
+		<h6>h6</h6>
+		<p>cool</p>
+	</body>
+</html>
+
+<!--
+	in chrome:
+	file:///home/kkroon/other/hosttolocal/index.html
+
+	but we run it on localhost:
+	http://localhost/hosttolocal/index.html
+	or
+	http://127.0.0.1:8000
+	http://localhost:8000
+
+	can also try another port
+
+	copilot:
+		if localhost:8000 is not working, try:
+		php -S localhost:8000
+
+	gpt says to host this:
+		For Python 2.x: python -m SimpleHTTPServer
+		For Python 3.x: python -m http.server
+
+	example of running it from terminal:
+		~/other/hosttolocal % python3 -m http.server  
+		Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+		127.0.0.1 - - [11/Nov/2023 22:19:26] "GET / HTTP/1.1" 200 -
+		127.0.0.1 - - [11/Nov/2023 22:19:26] code 404, message File not found
+		127.0.0.1 - - [11/Nov/2023 22:19:26] "GET /favicon.ico HTTP/1.1" 404 -
+		127.0.0.1 - - [11/Nov/2023 22:19:37] "GET / HTTP/1.1" 304 -
+		^C
+		Keyboard interrupt received, exiting.
+
+	it stays open until you press ctrl+c
+
+	basicly use: python3 -m http.server
+	and then go to localhost:8000
+	this will stay open until you press ctrl+c or close the terminal
+	
+-->
